@@ -1,0 +1,25 @@
+# === Full-Stack Ignore List ===
+
+# Environment files
+.env                # <── Most important for your MongoDB credentials!
+.env.local
+.env*.local
+
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# React (client)
+/client/.pnp
+/client/.pnp.js
+/client/build
+/client/coverage
+
+# Server (Node.js)
+/server/node_modules
+
+# System files
+.DS_Storenode_modules/
+.env
+client/.git
