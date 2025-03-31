@@ -1,0 +1,110 @@
+/* src/components/Home.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6a3093;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.heroText {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+/* CTA Button */
+.ctaButton {
+  display: inline-block;
+  background: linear-gradient(135deg, #8A2BE2, #FF69B4);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(138, 43, 226, 0.4);
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.featureTitle {
+  font-size: 1.4rem;
+  color: #6a3093;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.featureText {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.8rem;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

@@ -49,3 +49,6 @@ dist/
 # Optional (for specific tools)
 .eslintignore
 .prettierignore
+
+.env
+*.env

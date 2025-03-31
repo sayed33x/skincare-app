@@ -1,0 +1,132 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #6a3093;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #8A2BE2, #FF69B4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.productCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f5ff;
+}
+
+.imageLoader {
+  position: absolute;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.productImage {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.productImage.visible {
+  opacity: 1;
+}
+
+.productInfo {
+  padding: 1.2rem;
+}
+
+.productName {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.brand {
+  font-size: 0.85rem;
+  color: #6a3093;
+  font-weight: 500;
+}
+
+.category {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.size {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .imageContainer {
+    height: 180px;
+  }
+}

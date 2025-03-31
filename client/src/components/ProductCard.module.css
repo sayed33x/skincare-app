@@ -1,0 +1,58 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  height: 200px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f5ff;
+}
+
+.image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.content {
+  padding: 1.2rem;
+}
+
+.name {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.brand {
+  font-size: 0.85rem;
+  color: #6a3093;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.size {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.category {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+}
